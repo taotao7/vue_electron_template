@@ -23,5 +23,9 @@
     "types/**/*.d.ts",
     "../../types/**/*.d.ts"
   ],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
+  "typedocOptions": {
+    "entryPoints": ["src/index.ts", "src/App.vue"],
+    "out": "docs"
+  }
 }

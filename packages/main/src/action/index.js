@@ -7,6 +7,6 @@ const listenCheck = () => {
   });
 };
 
-export default () => {
+export default function(){
   listenCheck();
-};
+}

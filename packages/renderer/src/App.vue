@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {checkConnect} from '#preload';
-import {OMessage as message} from 'onu-ui';
+import {OMessage as message,OButton} from 'onu-ui';
 import {useDark, useToggle} from '@vueuse/core';
 
 const isDark = useDark();

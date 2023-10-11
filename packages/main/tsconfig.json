@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "module": "esnext",
     "target": "esnext",
     "sourceMap": false,
@@ -14,5 +15,9 @@
     }
   },
   "include": ["src/**/*.ts", "../../types/**/*.d.ts"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
+  "typedocOptions": {
+    "entryPoints": ["src/mainWindow.ts","src/api/index.ts","src/action/index.ts"],
+    "out": "docs"
+  }
 }
